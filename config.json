@@ -1,0 +1,43 @@
+{
+  "formatVersion": 1.0,
+  "menu": {
+    "Config.access": {
+      "label": "Config.access",
+      "formFields": {
+        "access.apiUsername": {
+          "type": "inputText",
+          "required": true,
+          "label": "Config.accessApiUsername"
+        },
+        "access.apiPassword": {
+          "type": "inputText",
+          "required": true,
+          "label": "Config.accessApiPassword"
+        },
+        "extra.additionalDescription": {
+          "type": "inputText",
+          "required": false,
+          "label": "Config.additionalDescription"
+        },
+        "env.type": {
+          "type": "selectBox",
+          "required": false,
+          "label": "Config.environmentType",
+          "options": {
+            "defaultValue": "prod",
+            "selectBoxValues": [
+              {
+                "value": "dev",
+                "caption": "Config.environmentTypeDevelopment"
+              },
+              {
+                "value": "prod",
+                "caption": "Config.environmentTypeProduction"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
