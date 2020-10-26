@@ -26,10 +26,10 @@ class ProcedurePluginServiceProvider extends ServiceProvider
     public function boot(EventProceduresService $eventProceduresService, ReturnsServiceProviderService $returnsServiceProviderService)
     {
       //WARNING: DONT CHANGE NAMES! IF NAME CHANGE USER MUST CONFIGURE PLUGIN FROM SCRATCH
-      
+
       $returnsServiceProviderService->registerReturnsProvider(
           Constants::PLUGIN_NAME,
-          'GoGlobal24',
+          'DHL',
           ShippingController::class
       );
 
