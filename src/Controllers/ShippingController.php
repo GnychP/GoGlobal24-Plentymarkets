@@ -230,8 +230,10 @@ class ShippingController extends Controller
      */
     private function prepareRequestPackage(OrderShippingPackage $package, ShippingPackageType $packageType, Order $order): array
     {
+        $weight = $package->weight / 1000;
+        $weight = ($weight > 0) ? round($weight, 2) : 1;
         $package = [
-            'weight' => $package->weight / 1000,
+            'weight' => $weight,
             'size_l' => $packageType->length,
             'size_w' => $packageType->width,
             'size_d' => $packageType->height,
