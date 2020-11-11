@@ -28,7 +28,7 @@ class ProcedurePluginServiceProvider extends ServiceProvider
       //WARNING: DONT CHANGE NAMES! IF NAME CHANGE USER MUST CONFIGURE PLUGIN FROM SCRATCH
 
       $returnsServiceProviderService->registerReturnsProvider(
-          Constants::PLUGIN_NAME,
+          Constants::SERVICE_NAME,
           'DHL',
           ShippingController::class
       );

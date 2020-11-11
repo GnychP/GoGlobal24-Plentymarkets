@@ -25,7 +25,7 @@ class CreateReturnServiceProvider
                   "Trying to save migration ",
                   ['test' => 'test']
               );
-            $this->returnsServiceProviderRepository->saveReturnsServiceProvider(Constants::PLUGIN_NAME);
+            $this->returnsServiceProviderRepository->saveReturnsServiceProvider(Constants::SERVICE_NAME);
         } catch (\Exception $exception) {
             $this->getLogger(Constants::PLUGIN_NAME)
                 ->critical(

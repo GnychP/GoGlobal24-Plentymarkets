@@ -6,6 +6,7 @@ namespace GoGlobal24\Helpers;
 class Constants
 {
     const PLUGIN_NAME = 'GoGlobal24';
+    const SERVICE_NAME = 'DHL';
     const ENV_PROD = 'prod';
     const ENV_DEV = 'dev';
 

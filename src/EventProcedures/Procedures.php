@@ -24,6 +24,6 @@ class Procedures
               'Test' => 'test process'
             ]);
         $order = $event->getOrder();
-        $registerReturnsService->registerReturns(Constants::PLUGIN_NAME, [$order->id]);
+        $registerReturnsService->registerReturns(Constants::SERVICE_NAME, [$order->id]);
     }
 }
