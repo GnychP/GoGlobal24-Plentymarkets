@@ -5,7 +5,7 @@ namespace GoGlobal24\Helpers;
 
 class Constants
 {
-    const PLUGIN_NAME = 'GoGlobal24';
+    const PLUGIN_NAME = 'OTHER_FORWARDER';
     const SERVICE_NAME = 'OTHER_FORWARDER';
     const ENV_PROD = 'prod';
     const ENV_DEV = 'dev';

@@ -29,7 +29,7 @@ class ProcedurePluginServiceProvider extends ServiceProvider
 
       $returnsServiceProviderService->registerReturnsProvider(
           Constants::SERVICE_NAME,
-          'DHL',
+          'GoGlobal24',
           ShippingController::class
       );
 
