@@ -15,6 +15,8 @@ class HttpClient
 
     protected $baseUrl = 'https://gorest.goglobal24.com';
 
+    private $request;
+
     private $response;
 
     /**
@@ -31,6 +33,7 @@ class HttpClient
         $data['userName'] = $this->username;
         $data['password'] = $this->password;
 
+        $this->request = json_encode($data);
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, "{$this->baseUrl}/{$url}");
         curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
@@ -41,6 +44,11 @@ class HttpClient
         $response = curl_exec($ch);
 
         return $this->response = json_decode($response, true, 512, JSON_BIGINT_AS_STRING);
+    }
+
+    public function getRequest()
+    {
+      return $this->request;
     }
 
 
