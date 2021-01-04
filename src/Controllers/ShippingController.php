@@ -152,7 +152,8 @@ class ShippingController extends Controller
 
                 if ($env == Constants::ENV_PROD && $this->courier->client->getError()) {
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Error response', $this->courier->client->getLastResponse());
-                    $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Cannot create shipment', $this->courier->client->getErrorMessage());
+                    $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Cannot create shipment', $this->courier->client->getError());
+                    $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Cannot create shipment - request', $this->courier->getRequest());
                     /** @var FailedRegisterOrderReturns $failed */
                     $failed = pluginApp(FailedRegisterOrderReturns::class);
                     $failed->setOrderId($orderId);

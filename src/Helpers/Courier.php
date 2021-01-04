@@ -18,6 +18,8 @@ class Courier
 
     private $config;
 
+    private $request;
+
     public function __construct(HttpClient $client, ConfigRepository $configRepository)
     {
         $this->client = $client;
@@ -37,8 +39,7 @@ class Courier
             }
         }
 
-        //createShipment request
-        $createShipmentResponse = $this->client->post('create-shipment', [
+        $this->request = [
             'CreateShipmentsRequest002' => [
               'shipmentType' => 'Return',
               'carrierName' => 'DE-DHL',
@@ -60,7 +61,9 @@ class Courier
           		],
           		'shipmentDescription1' => $additionalDescription
           ]
-        ]);
+        ];
+        //createShipment request
+        $createShipmentResponse = $this->client->post('create-shipment', $this->request);
 
         if ($this->client->getError()) {
           return false;
@@ -76,6 +79,11 @@ class Courier
             ],
         ]);
         return $getLabelResponse['responses'][0];
+    }
+
+    public function getRequest()
+    {
+      return $this->request;
     }
 
     protected function dummyGetLabel($referenceID)
