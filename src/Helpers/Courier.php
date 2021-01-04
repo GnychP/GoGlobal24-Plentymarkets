@@ -83,7 +83,7 @@ class Courier
 
     public function getRequest()
     {
-      return $this->request;
+      return json_encode($this->request);
     }
 
     protected function dummyGetLabel($referenceID)

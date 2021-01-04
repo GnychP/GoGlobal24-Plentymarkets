@@ -149,6 +149,7 @@ class ShippingController extends Controller
                 $referenceID = $orderId.strtotime("now");
 
                 $GoGlobalResponse = $this->courier->createReturn($referenceID, $requestPackage, $returnSender, $additionalDescription);
+                $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Response result', $GoGlobalResponse);
 
                 if ($env == Constants::ENV_PROD && $this->courier->client->getError()) {
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Error response', $this->courier->client->getLastResponse());
@@ -233,7 +234,7 @@ class ShippingController extends Controller
     {
         $weight = $package->weight / 1000;
         $package = [
-            'weight' => ($weight > 0) ? round($weight, 2) : 1,
+            'weight' => ($weight > 0.5) ? round($weight, 2) : 1,
             'size_l' => $packageType->length,
             'size_w' => $packageType->width,
             'size_d' => $packageType->height,
