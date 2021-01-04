@@ -149,7 +149,6 @@ class ShippingController extends Controller
                 $referenceID = $orderId.strtotime("now");
 
                 $GoGlobalResponse = $this->courier->createReturn($referenceID, $requestPackage, $returnSender, $additionalDescription);
-                $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Response result', $GoGlobalResponse);
 
                 if ($env == Constants::ENV_PROD && $this->courier->client->getError()) {
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Error response', $this->courier->client->getLastResponse());
