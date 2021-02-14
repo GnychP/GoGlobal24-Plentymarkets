@@ -22,14 +22,14 @@ class CreateReturnServiceProvider
         try {
           $this->getLogger(Constants::PLUGIN_NAME)
               ->info(
-                  "Trying to save migration ",
+                  "Trying to save migration",
                   ['test' => 'test']
               );
             $this->returnsServiceProviderRepository->saveReturnsServiceProvider(Constants::PLUGIN_NAME);
         } catch (\Exception $exception) {
             $this->getLogger(Constants::PLUGIN_NAME)
                 ->critical(
-                    "Could not migrate/create new shipping provider: " . $exception->getMessage(),
+                    "Could not create new shipping provider: " . $exception->getMessage(),
                     ['error' => $exception->getTrace()]
                 );
         }

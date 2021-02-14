@@ -2,7 +2,6 @@
 
 namespace GoGlobal24\Controllers;
 
-
 use DateTime;
 
 use Plenty\Modules\Order\Models\Order;
@@ -154,11 +153,13 @@ class ShippingController extends Controller
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Error response', $this->courier->client->getLastResponse());
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Cannot create shipment', $this->courier->client->getError());
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24 Return: Cannot create shipment - request', $this->courier->client->getRequest());
+
                     /** @var FailedRegisterOrderReturns $failed */
                     $failed = pluginApp(FailedRegisterOrderReturns::class);
                     $failed->setOrderId($orderId);
                     $failed->addErrorMessage($this->courier->client->getError());
                     $response->addFailedRegisterOrderReturns($failed);
+
                     return $response;
                 }
 
@@ -241,6 +242,7 @@ class ShippingController extends Controller
             'note1' => 'note1',
             'note2' =>  'note2',
         ];
+
         return $package;
     }
 
@@ -282,6 +284,5 @@ class ShippingController extends Controller
     private function saveLabelToS3($body, $key)
     {
         return $this->storageRepository->uploadObject(Constants::PLUGIN_NAME, $key, $body, true);
-
     }
 }
