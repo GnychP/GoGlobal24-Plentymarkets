@@ -215,14 +215,14 @@ class ShippingController extends Controller
         $shipmentDate = date('Y-m-d');
 
         foreach ($orderIds as $orderId) {
-          
+
             $order = $this->orderRepository->findOrderById($orderId);
 
             //test
               $failed = pluginApp(FailedRegisterShipment::class);
               $failed->setOrderId($orderId);
               $failed->addErrorMessage('test');
-              $response->addFailedRegisterShipment('test');
+              $response->addFailedRegisterShipment($failed);
 
               return $response;
             //test
@@ -251,74 +251,10 @@ class ShippingController extends Controller
 
                     return $response;
                 }
-
-                $this->getLogger(Constants::PLUGIN_NAME)
-                    ->info('sp response', $spResponse);
-
-                $spResponse = $spResponse['response'];
-                $responsePackage = $spResponse['packages']['0'];
-
-                $packageId = $responsePackage['package_id'];
-                $storageKey = "{$packageId}.pdf";
-                $externalId = $responsePackage['external_id'];
-
-                $storageObject = $this->saveLabelToS3(base64_decode($responsePackage['labels']['0']), $storageKey);
-                $labelUrl = $this->storageRepository->getObjectUrl(Constants::PLUGIN_NAME, $storageKey, true, 60 * 24 * 7);
-
-                $packageData = [
-                    'packageNumber' => $externalId,
-                    'labelPath' => $storageObject->key,
-                ];
-
-                $this->getLogger(Constants::PLUGIN_NAME)
-                    ->info(
-                        'storage data', [
-                            'storageKey' => $storageKey,
-                            'labelUrl' => $labelUrl,
-                            'storageObject' => $storageObject,
-                            'packageData' => $packageData,
-                        ]
-                    );
-
-                $this->orderShippingPackage->updateOrderShippingPackage($shippingPackage->id, $packageData);
-
-                $shipmentItems[] = [
-                    'labelUrl' => $labelUrl,
-                    'shipmentNumber' => $externalId,
-                    'externalId' => $externalId,
-                    'packageId' => $packageId,
-                    'packageType' => $packageType->name,
-                ];
             }
 
-            if ($this->courier->client->getFirstError()) {
-                $this->getLogger(Constants::PLUGIN_NAME)
-                    ->error('SP Response Error', $this->courier->client->getLastResponse());
-
-                $this->createOrderResult[$orderId] = [
-                    'success' => false,
-                    'message' => $this->courier->client->getFirstError(),
-                    'newPackagenumber' => false,
-                    'packages' => [],
-                ];
-
-            } else {
-                // adds result
-                $this->createOrderResult[$orderId] = [
-                    'success' => true,
-                    'message' => 'Shipment successfully registered.',
-                    'newPackagenumber' => false,
-                    'packages' => $shipmentItems,
-                ];
-
-                $this->saveShippingInformation($orderId, $shipmentDate, $shipmentItems);
-            }
         }
 
-        $this->getLogger(Constants::PLUGIN_NAME)
-            ->info('createOrderResult', $this->createOrderResult);
-
-        // return all results to service
         return $this->createOrderResult;
     }
 
