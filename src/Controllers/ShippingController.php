@@ -270,7 +270,7 @@ class ShippingController extends Controller
                 ];
             }
 
-            if ($env == Constants::ENV_PROD && $this->courier->client->getError())) {
+            if ($env == Constants::ENV_PROD && $this->courier->client->getError()) {
 
                 $this->createOrderResult[$orderId] = [
                     'success' => false,
