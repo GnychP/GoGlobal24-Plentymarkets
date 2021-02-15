@@ -255,7 +255,7 @@ class ShippingController extends Controller
                 $storageKey = "delivery_{$reference}.pdf";
 
                 $packageData = [
-                    'packageNumber' =>   $trackingNo,
+                    'packageNumber' => $trackingNo,
                     'labelPath' => $labelUrl,
                 ];
 
@@ -265,7 +265,7 @@ class ShippingController extends Controller
                     'labelUrl' => $labelUrl,
                     'shipmentNumber' => $trackingNo,
                     'externalId' => $trackingNo,
-                    'packageId' => $packageId,
+                    'packageId' => $reference,
                     'packageType' => $packageType->name,
                 ];
             }
@@ -293,6 +293,23 @@ class ShippingController extends Controller
         }
 
         return $this->createOrderResult;
+    }
+
+    private function saveShippingInformation($orderId, $shipmentDate, $shipmentItems)
+    {
+        $data = [
+            'orderId' => $orderId,
+            'transactionId' => implode(',', array_column($shipmentItems, 'shipmentNumber')),
+            'shippingServiceProvider' => Constants::PLUGIN_NAME,
+            'shippingStatus' => 'registered',
+            'shippingCosts' => 0.00,
+            'additionalData' => $shipmentItems,
+            'registrationAt' => date(DateTime::W3C),
+            'shipmentAt' => date(DateTime::W3C, strtotime($shipmentDate)),
+
+        ];
+
+        $shippingInformation = $this->shippingInformationRepositoryContract->saveShippingInformation($data);
     }
 
     /**
