@@ -297,6 +297,7 @@ class ShippingController extends Controller
 
     public function getLabels(Request $request, $orderIds)
     {
+        $this->getLogger(Constants::PLUGIN_NAME)->error('Label',  'run');
         $orderIds = $this->getOrderIds($request, $orderIds);
         $labels = [];
         foreach ($orderIds as $orderId) {
