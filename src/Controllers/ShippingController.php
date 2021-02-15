@@ -227,7 +227,9 @@ class ShippingController extends Controller
               return $response;
             //test
 
-            $receiver =  $this->prepareSpSender();
+            $receiver =  $this->getReceiver();
+            $additionalDescription = $this->config->get('GoGlobal24.extra.additionalDescription');
+            $env = $this->config->get('GoGlobal24.env.type', Constants::ENV_DEV);
 
             $shippingPackages = $this->orderShippingPackage->listOrderShippingPackages($order->id);
             foreach ($shippingPackages as $shippingPackage) {
