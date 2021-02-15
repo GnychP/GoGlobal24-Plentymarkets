@@ -295,6 +295,22 @@ class ShippingController extends Controller
         return $this->createOrderResult;
     }
 
+    public function getLabels(Request $request, $orderIds)
+    {
+        $orderIds = $this->getOrderIds($request, $orderIds);
+        $labels = [];
+        foreach ($orderIds as $orderId) {
+            $shippingPackages = $this->orderShippingPackage->listOrderShippingPackages($orderId);
+
+            foreach ($shippingPackages as $shippingPackage) {
+                $this->getLogger(Constants::PLUGIN_NAME)->error('Label',  $shippingPackage->labelPath);
+                $labels[] = $shippingPackage->labelPath;
+            }
+        }
+
+        return $labels;
+    }
+
     private function saveShippingInformation($orderId, $shipmentDate, $shipmentItems)
     {
         $data = [
