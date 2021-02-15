@@ -210,27 +210,18 @@ class ShippingController extends Controller
 
     public function registerShipments(Request $request, $orderIds)
     {
-        $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test');
         $orderIds = $this->getOrderIds($request, $orderIds);
         $response = pluginApp(RegisterShipmentResponse::class);
         $shipmentDate = date('Y-m-d');
 
         foreach ($orderIds as $orderId) {
-            $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test2');
             $order = $this->orderRepository->findOrderById($orderId);
-            $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test4');
-            //test
-              $failed = pluginApp(FailedRegisterShipment::class);
-              $failed->setOrderId($orderId);
-              $failed->addErrorMessage("<br><br><br>GoGlobal24 API Error message: <br>Test <br>testowe<br>");
-              $response->addFailedRegisterShipment($failed);
-              $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test3');
-              return $response;
-            //test
 
             $receiver =  $this->getReceiver($order);
             $additionalDescription = $this->config->get('GoGlobal24.extra.additionalDescription');
             $env = $this->config->get('GoGlobal24.env.type', Constants::ENV_DEV);
+
+            $shipmentItems = [];
 
             $shippingPackages = $this->orderShippingPackage->listOrderShippingPackages($order->id);
             foreach ($shippingPackages as $shippingPackage) {
@@ -241,7 +232,7 @@ class ShippingController extends Controller
                 $referenceID = $orderId.strtotime("now");
 
                 $GoGlobalResponse = $this->courier->createShipment($referenceID, $requestPackage, $receiver, $additionalDescription);
-//TUTAJ
+
                 if ($env == Constants::ENV_PROD && $this->courier->client->getError()) {
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response', $this->courier->client->getLastResponse());
                     $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Cannot create shipment', $this->courier->client->getError());
@@ -252,8 +243,51 @@ class ShippingController extends Controller
                     $failed->addErrorMessage($this->courier->client->getError());
                     $response->addFailedRegisterShipment($failed);
 
-                    return $response;
+                    // return $response;
+                    break;
                 }
+
+                $reference = $GoGlobalResponse['referenceID'];
+                $trackingNo = $GoGlobalResponse['trackingNo'];
+                $labelUrl = base64_decode($GoGlobalResponse['labelData']);
+                $labelBase64 = base64_encode($this->courier->client->download($labelUrl));
+
+                $storageKey = "delivery_{$reference}.pdf";
+
+                $packageData = [
+                    'packageNumber' =>   $trackingNo,
+                    'labelPath' => $labelUrl,
+                ];
+
+                $this->orderShippingPackage->updateOrderShippingPackage($shippingPackage->id, $packageData);
+
+                $shipmentItems[] = [
+                    'labelUrl' => $labelUrl,
+                    'shipmentNumber' => $trackingNo,
+                    'externalId' => $trackingNo,
+                    'packageId' => $packageId,
+                    'packageType' => $packageType->name,
+                ];
+            }
+
+            if ($env == Constants::ENV_PROD && $this->courier->client->getError())) {
+
+                $this->createOrderResult[$orderId] = [
+                    'success' => false,
+                    'message' => $this->courier->client->getError(),
+                    'newPackagenumber' => false,
+                    'packages' => [],
+                ];
+            } else {
+
+                $this->createOrderResult[$orderId] = [
+                    'success' => true,
+                    'message' => 'Shipment successfully registered.',
+                    'newPackagenumber' => false,
+                    'packages' => $shipmentItems,
+                ];
+
+                $this->saveShippingInformation($orderId, $shipmentDate, $shipmentItems);
             }
 
         }

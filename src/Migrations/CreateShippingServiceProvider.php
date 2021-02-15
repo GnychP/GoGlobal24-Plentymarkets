@@ -21,7 +21,7 @@ class CreateShippingServiceProvider
     public function run()
     {
         try {
-            $this->shippingServiceProviderRepository->saveShippingServiceProvider(Constants::PLUGIN_NAME, 'GoGlobal24');
+            $this->shippingServiceProviderRepository->saveShippingServiceProvider(Constants::PLUGIN_NAME, Constants::PLUGIN_NAME);
         } catch (Exception $exception) {
           $this->getLogger(Constants::PLUGIN_NAME)
               ->critical(
