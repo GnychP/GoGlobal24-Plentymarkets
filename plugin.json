@@ -16,6 +16,7 @@
       "email": "it@goglobal24.com",
       "phone": "+48 660 804 770",
       "runOnBuild": [
+        "GoGlobal24\\Migrations\\CreateShippingServiceProvider",
         "GoGlobal24\\Migrations\\CreateReturnServiceProvider"
       ]
 }

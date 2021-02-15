@@ -81,6 +81,60 @@ class Courier
         return $getLabelResponse['responses'][0];
     }
 
+    public function createShipment($referenceID, array $package, array $receiver, string $additionalDescription)
+    {
+        $env = $this->config->get('GoGlobal24.env.type', Constants::ENV_DEV);
+
+        if ($env == Constants::ENV_DEV) {
+            $createShipment = $this->dummyCreateShipment($referenceID);
+            if($createShipment['status'] == 'OK') {
+              $getLabel = $this->dummyGetLabel($referenceID);
+              return $getLabel['responses'][0];
+            }
+        }
+
+        $this->request = [
+            'CreateShipmentsRequest002' => [
+              'shipmentType' => 'Delivery',
+              'carrierName' => 'DE-DHL',
+              'shipperAddress' => [
+          			'additionalDescription' => $additionalDescription
+          		],
+              'receiverAddress' => $receiver,
+              'payerAddress' => null,
+              'items' => [
+          			[
+          				'referenceID' => $referenceID,
+          				'referenceID2' => '',
+          				'type' => 'NP',
+          				'weight' => $package['weight']
+          			]
+        			],
+              'serviceLevel' => [
+          			'service' => 'DST'
+          		],
+          		'shipmentDescription1' => $additionalDescription
+          ]
+        ];
+        //createShipment request
+        $createShipmentResponse = $this->client->post('create-shipment', $this->request);
+
+        if ($this->client->getError()) {
+          return false;
+        }
+
+        //get label request
+        $getLabelResponse = $this->client->post('get-label', [
+            'GetLabelRequest' => [
+              'referenceID' => $referenceID,
+              'collectiveLabel' => 1,
+              'labelFormat' => 'PDF',
+              'labelSize' => 'A6'
+            ],
+        ]);
+        return $getLabelResponse['responses'][0];
+    }
+
     public function getRequest()
     {
       return json_encode($this->request);

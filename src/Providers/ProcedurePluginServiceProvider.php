@@ -12,18 +12,17 @@ use GoGlobal24\Controllers\ShippingController;
 
 class ProcedurePluginServiceProvider extends ServiceProvider
 {
-
-    public function register()
-    {
-
-    }
-
     /**
      * @param EventProceduresService $eventProceduresService
      * @param ReturnsServiceProviderService $returnsServiceProviderService
+     * @param ShippingServiceProviderService $shippingServiceProviderService
      * @return void
      */
-    public function boot(EventProceduresService $eventProceduresService, ReturnsServiceProviderService $returnsServiceProviderService)
+    public function boot(
+      EventProceduresService $eventProceduresService,
+      ShippingServiceProviderService $shippingServiceProviderService,
+      ReturnsServiceProviderService $returnsServiceProviderService
+    )
     {
       //WARNING: DONT CHANGE NAMES! IF NAME CHANGE USER MUST CONFIGURE PLUGIN FROM SCRATCH
 
@@ -31,6 +30,16 @@ class ProcedurePluginServiceProvider extends ServiceProvider
           Constants::PLUGIN_NAME,
           'GoGlobal24',
           ShippingController::class
+      );
+
+      $shippingServiceProviderService->registerShippingProvider(
+          Constants::PLUGIN_NAME,
+            ['de' => 'GoGlobal24', 'en' => 'GoGlobal24'],
+          [
+              'GoGlobal24\\Controllers\\ShippingController@registerShipments',
+              // 'GoGlobal24\\Controllers\\ShippingController@deleteShipments',
+              // 'GoGlobal24\\Controllers\\ShippingController@getLabels',
+          ]
       );
 
       $eventProceduresService->registerProcedure(

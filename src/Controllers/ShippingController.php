@@ -13,6 +13,8 @@ use Plenty\Modules\Order\Shipping\PackageType\Models\ShippingPackageType;
 use Plenty\Modules\Order\Shipping\Returns\Models\FailedRegisterOrderReturns;
 use Plenty\Modules\Order\Shipping\Returns\Models\RegisterOrderReturnsResponse;
 use Plenty\Modules\Order\Shipping\Returns\Models\SuccessfullyRegisteredOrderReturns;
+use Plenty\Modules\Order\Shipping\ServiceProvider\Models\FailedRegisterShipment;
+use Plenty\Modules\Order\Shipping\ServiceProvider\Models\RegisterShipmentResponse;
 use Plenty\Modules\Order\Shipping\Package\Contracts\OrderShippingPackageRepositoryContract;
 use Plenty\Modules\Order\Shipping\Information\Contracts\ShippingInformationRepositoryContract;
 use Plenty\Modules\Order\Shipping\PackageType\Contracts\ShippingPackageTypeRepositoryContract;
@@ -204,6 +206,120 @@ class ShippingController extends Controller
         }
 
         return $response;
+    }
+
+    public function registerShipments(Request $request, $orderIds)
+    {
+        $orderIds = $this->getOrderIds($request, $orderIds);
+        $response = pluginApp(RegisterShipmentResponse::class);
+        $shipmentDate = date('Y-m-d');
+
+        foreach ($orderIds as $orderId) {
+          
+            $order = $this->orderRepository->findOrderById($orderId);
+
+            //test
+              $failed = pluginApp(FailedRegisterShipment::class);
+              $failed->setOrderId($orderId);
+              $failed->addErrorMessage('test');
+              $response->addFailedRegisterShipment('test');
+
+              return $response;
+            //test
+
+            $receiver =  $this->prepareSpSender();
+
+            $shippingPackages = $this->orderShippingPackage->listOrderShippingPackages($order->id);
+            foreach ($shippingPackages as $shippingPackage) {
+
+                $packageType = $this->shippingPackageTypeRepositoryContract->findShippingPackageTypeById($shippingPackage->packageId);
+                $requestPackage = $this->prepareRequestPackage($shippingPackage, $packageType, $order);
+
+                $referenceID = $orderId.strtotime("now");
+
+                $GoGlobalResponse = $this->courier->createShipment($referenceID, $requestPackage, $receiver, $additionalDescription);
+//TUTAJ
+                if ($env == Constants::ENV_PROD && $this->courier->client->getError()) {
+                    $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response', $this->courier->client->getLastResponse());
+                    $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Cannot create shipment', $this->courier->client->getError());
+                    $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Cannot create shipment - request', $this->courier->client->getRequest());
+
+                    $failed = pluginApp(FailedRegisterShipment::class);
+                    $failed->setOrderId($orderId);
+                    $failed->addErrorMessage($this->courier->client->getError());
+                    $response->addFailedRegisterShipment($failed);
+
+                    return $response;
+                }
+
+                $this->getLogger(Constants::PLUGIN_NAME)
+                    ->info('sp response', $spResponse);
+
+                $spResponse = $spResponse['response'];
+                $responsePackage = $spResponse['packages']['0'];
+
+                $packageId = $responsePackage['package_id'];
+                $storageKey = "{$packageId}.pdf";
+                $externalId = $responsePackage['external_id'];
+
+                $storageObject = $this->saveLabelToS3(base64_decode($responsePackage['labels']['0']), $storageKey);
+                $labelUrl = $this->storageRepository->getObjectUrl(Constants::PLUGIN_NAME, $storageKey, true, 60 * 24 * 7);
+
+                $packageData = [
+                    'packageNumber' => $externalId,
+                    'labelPath' => $storageObject->key,
+                ];
+
+                $this->getLogger(Constants::PLUGIN_NAME)
+                    ->info(
+                        'storage data', [
+                            'storageKey' => $storageKey,
+                            'labelUrl' => $labelUrl,
+                            'storageObject' => $storageObject,
+                            'packageData' => $packageData,
+                        ]
+                    );
+
+                $this->orderShippingPackage->updateOrderShippingPackage($shippingPackage->id, $packageData);
+
+                $shipmentItems[] = [
+                    'labelUrl' => $labelUrl,
+                    'shipmentNumber' => $externalId,
+                    'externalId' => $externalId,
+                    'packageId' => $packageId,
+                    'packageType' => $packageType->name,
+                ];
+            }
+
+            if ($this->courier->client->getFirstError()) {
+                $this->getLogger(Constants::PLUGIN_NAME)
+                    ->error('SP Response Error', $this->courier->client->getLastResponse());
+
+                $this->createOrderResult[$orderId] = [
+                    'success' => false,
+                    'message' => $this->courier->client->getFirstError(),
+                    'newPackagenumber' => false,
+                    'packages' => [],
+                ];
+
+            } else {
+                // adds result
+                $this->createOrderResult[$orderId] = [
+                    'success' => true,
+                    'message' => 'Shipment successfully registered.',
+                    'newPackagenumber' => false,
+                    'packages' => $shipmentItems,
+                ];
+
+                $this->saveShippingInformation($orderId, $shipmentDate, $shipmentItems);
+            }
+        }
+
+        $this->getLogger(Constants::PLUGIN_NAME)
+            ->info('createOrderResult', $this->createOrderResult);
+
+        // return all results to service
+        return $this->createOrderResult;
     }
 
     /**
