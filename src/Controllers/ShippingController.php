@@ -210,20 +210,21 @@ class ShippingController extends Controller
 
     public function registerShipments(Request $request, $orderIds)
     {
+        $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test');
         $orderIds = $this->getOrderIds($request, $orderIds);
         $response = pluginApp(RegisterShipmentResponse::class);
         $shipmentDate = date('Y-m-d');
 
         foreach ($orderIds as $orderId) {
-
+            $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test2');
             $order = $this->orderRepository->findOrderById($orderId);
-
+            $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test4');
             //test
               $failed = pluginApp(FailedRegisterShipment::class);
               $failed->setOrderId($orderId);
-              $failed->addErrorMessage('test');
+              $failed->addErrorMessage("<br><br><br>GoGlobal24 API Error message: <br>Test <br>testowe<br>");
               $response->addFailedRegisterShipment($failed);
-
+              $this->getLogger(Constants::PLUGIN_NAME)->error('GoGlobal24: Error response','test3');
               return $response;
             //test
 
