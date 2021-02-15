@@ -5,6 +5,7 @@ use Plenty\Plugin\ServiceProvider;
 use Plenty\Modules\EventProcedures\Services\EventProceduresService;
 use Plenty\Modules\EventProcedures\Services\Entries\ProcedureEntry;
 use Plenty\Modules\Order\Shipping\Returns\Services\ReturnsServiceProviderService;
+use Plenty\Modules\Order\Shipping\ServiceProvider\Services\ShippingServiceProviderService;
 
 use GoGlobal24\Helpers\Constants;
 use GoGlobal24\EventProcedures\Procedures;
