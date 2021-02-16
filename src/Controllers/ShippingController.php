@@ -297,15 +297,15 @@ class ShippingController extends Controller
 
     public function getLabels(Request $request, $orderIds)
     {
-        $this->getLogger(Constants::PLUGIN_NAME)->error('Label',  'run');
         $orderIds = $this->getOrderIds($request, $orderIds);
+
         $labels = [];
         foreach ($orderIds as $orderId) {
             $shippingPackages = $this->orderShippingPackage->listOrderShippingPackages($orderId);
-
             foreach ($shippingPackages as $shippingPackage) {
-                $this->getLogger(Constants::PLUGIN_NAME)->error('Label',  $shippingPackage->labelPath);
-                $labels[] = $shippingPackage->labelPath;
+              
+                $labelBase64 = base64_encode($this->courier->client->download($shippingPackage->labelPath));
+                $labels[] = $labelBase64;
             }
         }
 
