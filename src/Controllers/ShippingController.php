@@ -303,8 +303,8 @@ class ShippingController extends Controller
         foreach ($orderIds as $orderId) {
             $shippingPackages = $this->orderShippingPackage->listOrderShippingPackages($orderId);
             foreach ($shippingPackages as $shippingPackage) {
-              
-                $labelBase64 = base64_encode($this->courier->client->download($shippingPackage->labelPath));
+
+                $labelBase64 = $this->courier->client->download($shippingPackage->labelPath);
                 $labels[] = $labelBase64;
             }
         }
