@@ -51,11 +51,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -69,7 +69,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -83,11 +83,11 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
-        },        },
+        },
         "FR.courier": {
           "type": "selectBox",
           "required": false,
@@ -97,11 +97,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -115,7 +115,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -129,7 +129,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -143,11 +143,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -161,7 +161,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -175,7 +175,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -189,11 +189,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -207,7 +207,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -221,7 +221,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -235,11 +235,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -253,7 +253,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -267,7 +267,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -281,11 +281,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -299,7 +299,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -313,7 +313,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -327,11 +327,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -345,7 +345,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -359,7 +359,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -373,11 +373,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -391,7 +391,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -405,7 +405,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -419,11 +419,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -437,7 +437,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -451,7 +451,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -465,11 +465,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -483,7 +483,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -497,7 +497,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -511,11 +511,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -529,7 +529,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -543,7 +543,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -557,11 +557,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -575,7 +575,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -589,7 +589,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -603,11 +603,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -621,7 +621,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -635,7 +635,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -649,11 +649,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -667,7 +667,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -681,7 +681,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -695,11 +695,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -713,7 +713,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -727,7 +727,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -741,11 +741,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -759,7 +759,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -773,7 +773,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -787,11 +787,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -805,7 +805,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -819,7 +819,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -833,11 +833,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -851,7 +851,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -865,7 +865,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -879,11 +879,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -897,7 +897,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -911,7 +911,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -925,11 +925,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -943,7 +943,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -957,7 +957,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -971,11 +971,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -989,7 +989,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1003,7 +1003,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1017,11 +1017,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1035,7 +1035,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1049,7 +1049,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1063,11 +1063,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1081,7 +1081,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1095,7 +1095,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1109,11 +1109,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1127,7 +1127,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1141,7 +1141,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1155,11 +1155,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1173,7 +1173,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1187,7 +1187,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1201,11 +1201,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1219,7 +1219,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1233,7 +1233,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1247,11 +1247,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1265,7 +1265,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1279,7 +1279,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1293,11 +1293,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1311,7 +1311,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1325,7 +1325,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1339,11 +1339,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1357,7 +1357,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1371,7 +1371,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
@@ -1385,11 +1385,11 @@
             "selectBoxValues": [
               {
                 "value": "DE-DHL",
-                "caption": "DE-DHL",
+                "caption": "DE-DHL"
               },
               {
                 "value": "DE-DPD",
-                "caption": "DE-DPD",
+                "caption": "DE-DPD"
               }
             ]
           }
@@ -1403,7 +1403,7 @@
             "selectBoxValues": [
               {
                 "value": "STT",
-                "caption": "STT",
+                "caption": "STT"
               }
             ]
           }
@@ -1417,7 +1417,7 @@
             "selectBoxValues": [
               {
                 "value": "ST",
-                "caption": "ST",
+                "caption": "ST"
               }
             ]
           }
