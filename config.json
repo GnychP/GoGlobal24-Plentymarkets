@@ -38,6 +38,1391 @@
           }
         }
       }
+    },
+    "Config.defaultValues": {
+      "label": "Config.defaultValues",
+      "formFields": {
+        "DE.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "DE.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "DE.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },        },
+        "FR.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "FR.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "FR.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "GB.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "GB.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "GB.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "IT.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "IT.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "IT.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "ES.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "ES.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "ES.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "BE.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "BE.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "BE.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "NL.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "NL.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "NL.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "LU.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "LU.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "LU.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "CZ.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "CZ.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "CZ.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "DK.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "DK.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "DK.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "CH.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "CH.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "CH.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "SI.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "SI.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "SI.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "MC.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "MC.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "MC.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "SK.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "SK.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "SK.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "HU.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "HU.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "HU.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "IE.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "IE.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "IE.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "PT.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "PT.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "PT.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "SE.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "SE.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "SE.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "EE.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "EE.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "EE.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "FI.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "FI.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "FI.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "LT.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "LT.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "LT.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "LV.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "LV.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "LV.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "NO.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "NO.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "NO.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "HR.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "HR.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "HR.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "BA.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "BA.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "BA.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "BG.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "BG.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "BG.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "GR.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "GR.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "GR.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "IS.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "IS.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "IS.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "RO.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "RO.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "RO.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        },
+        "AT.courier": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "DE-DHL",
+                "caption": "DE-DHL",
+              },
+              {
+                "value": "DE-DPD",
+                "caption": "DE-DPD",
+              }
+            ]
+          }
+        },
+        "AT.service": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "STT",
+                "caption": "STT",
+              }
+            ]
+          }
+        },
+        "AT.size": {
+          "type": "selectBox",
+          "required": false,
+          "label": "DE",
+          "options": {
+            "defaultValue": "DE-DHL",
+            "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "ST",
+              }
+            ]
+          }
+        }
+      }
     }
   }
 }
