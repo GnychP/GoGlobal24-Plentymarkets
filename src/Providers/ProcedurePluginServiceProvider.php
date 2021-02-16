@@ -38,8 +38,8 @@ class ProcedurePluginServiceProvider extends ServiceProvider
             ['de' => 'GoGlobal24', 'en' => 'GoGlobal24'],
           [
               'GoGlobal24\\Controllers\\ShippingController@registerShipments',
+              'GoGlobal24\\Controllers\\ShippingController@getLabels',
               // 'GoGlobal24\\Controllers\\ShippingController@deleteShipments',
-              // 'GoGlobal24\\Controllers\\ShippingController@getLabels',
           ]
       );
 
