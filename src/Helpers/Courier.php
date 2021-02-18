@@ -93,10 +93,15 @@ class Courier
             }
         }
 
+        $countryCode = strtoupper($receiver['country']);
+        $courier = $this->config->get("GoGlobal24.$countryCode.courier");
+        $service = $this->config->get("GoGlobal24.$countryCode.service");
+        $size = $this->config->get("GoGlobal24.$countryCode.size");
+
         $this->request = [
             'CreateShipmentsRequest002' => [
               'shipmentType' => 'Delivery',
-              'carrierName' => 'DE-DHL',
+              'carrierName' =>   $courier,
               'shipperAddress' => [
           			'additionalDescription' => $additionalDescription
           		],
@@ -106,12 +111,12 @@ class Courier
           			[
           				'referenceID' => $referenceID,
           				'referenceID2' => '',
-          				'type' => 'NP',
+          				'type' => $size,
           				'weight' => $package['weight']
           			]
         			],
               'serviceLevel' => [
-          			'service' => 'DST'
+          			'service' => $service
           		],
           		'shipmentDescription1' => $additionalDescription
           ]

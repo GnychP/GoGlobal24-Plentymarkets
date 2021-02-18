@@ -45,7 +45,7 @@
         "DE.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "DE courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -63,13 +63,17 @@
         "DE.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "DE service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -77,13 +81,17 @@
         "DE.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "DE size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -91,17 +99,13 @@
         "FR.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "FR courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "FR-COLISSIMO",
             "selectBoxValues": [
               {
-                "value": "DE-DHL",
-                "caption": "DE-DHL"
-              },
-              {
-                "value": "DE-DPD",
-                "caption": "DE-DPD"
+                "value": "FR-COLISSIMO",
+                "caption": "FR-COLISSIMO"
               }
             ]
           }
@@ -109,13 +113,17 @@
         "FR.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "FR service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -123,13 +131,17 @@
         "FR.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "FR size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -137,17 +149,13 @@
         "GB.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "GB courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "GB-ROYALMAIL",
             "selectBoxValues": [
               {
-                "value": "DE-DHL",
-                "caption": "DE-DHL"
-              },
-              {
-                "value": "DE-DPD",
-                "caption": "DE-DPD"
+                "value": "GB-ROYALMAIL",
+                "caption": "GB-ROYALMAIL"
               }
             ]
           }
@@ -155,13 +163,17 @@
         "GB.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "GB service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -169,13 +181,17 @@
         "GB.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "GB size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -183,7 +199,7 @@
         "IT.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IT courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -201,13 +217,17 @@
         "IT.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IT service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -215,13 +235,17 @@
         "IT.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IT size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -229,7 +253,7 @@
         "ES.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "ES courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -247,13 +271,17 @@
         "ES.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "ES service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -261,13 +289,17 @@
         "ES.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "ES size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -275,17 +307,13 @@
         "BE.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BE courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "POST-NL",
             "selectBoxValues": [
               {
-                "value": "DE-DHL",
-                "caption": "DE-DHL"
-              },
-              {
-                "value": "DE-DPD",
-                "caption": "DE-DPD"
+                "value": "POST-NL",
+                "caption": "POST-NL"
               }
             ]
           }
@@ -293,13 +321,17 @@
         "BE.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BE service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -307,13 +339,17 @@
         "BE.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BE size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -321,17 +357,13 @@
         "NL.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "NL courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "POST-NL",
             "selectBoxValues": [
               {
-                "value": "DE-DHL",
-                "caption": "DE-DHL"
-              },
-              {
-                "value": "DE-DPD",
-                "caption": "DE-DPD"
+                "value": "POST-NL",
+                "caption": "POST-NL"
               }
             ]
           }
@@ -339,13 +371,17 @@
         "NL.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "NL service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -353,13 +389,17 @@
         "NL.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "NL size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -367,7 +407,7 @@
         "LU.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LU courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -385,13 +425,17 @@
         "LU.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LU service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -399,13 +443,17 @@
         "LU.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LU size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -413,7 +461,7 @@
         "CZ.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "CZ courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -431,13 +479,17 @@
         "CZ.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "CZ service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -445,13 +497,17 @@
         "CZ.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "CZ size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -459,7 +515,7 @@
         "DK.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "DK courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -477,13 +533,17 @@
         "DK.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "DK service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -491,13 +551,17 @@
         "DK.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "DK size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -505,7 +569,7 @@
         "CH.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "CH courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -523,13 +587,17 @@
         "CH.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "CH service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -537,13 +605,17 @@
         "CH.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "CH size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -551,7 +623,7 @@
         "SI.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SI courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -569,13 +641,17 @@
         "SI.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SI service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -583,13 +659,17 @@
         "SI.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SI size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -597,7 +677,7 @@
         "MC.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "MC courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -615,13 +695,17 @@
         "MC.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "MC service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -629,13 +713,17 @@
         "MC.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "MC size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -643,7 +731,7 @@
         "SK.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SK courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -661,13 +749,17 @@
         "SK.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SK service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -675,13 +767,17 @@
         "SK.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SK size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -689,7 +785,7 @@
         "HU.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "HU courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -707,13 +803,17 @@
         "HU.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "HU service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -721,13 +821,17 @@
         "HU.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "HU size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -735,7 +839,7 @@
         "IE.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IE courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -753,13 +857,17 @@
         "IE.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IE service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -767,13 +875,17 @@
         "IE.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IE size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -781,7 +893,7 @@
         "PT.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "PT courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -799,13 +911,17 @@
         "PT.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "PT service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -813,13 +929,17 @@
         "PT.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "PT size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -827,7 +947,7 @@
         "SE.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SE courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -845,13 +965,17 @@
         "SE.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SE service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -859,13 +983,17 @@
         "SE.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "SE size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -873,7 +1001,7 @@
         "EE.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "EE courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -891,13 +1019,17 @@
         "EE.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "EE service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -905,13 +1037,17 @@
         "EE.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "EE size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -919,7 +1055,7 @@
         "FI.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "FI courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -937,13 +1073,17 @@
         "FI.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "FI service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -951,13 +1091,17 @@
         "FI.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "FI size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -965,7 +1109,7 @@
         "LT.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LT courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -983,13 +1127,17 @@
         "LT.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LT service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -997,13 +1145,17 @@
         "LT.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LT size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1011,7 +1163,7 @@
         "LV.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LV courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1029,13 +1181,17 @@
         "LV.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LV service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1043,13 +1199,17 @@
         "LV.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "LV size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1057,7 +1217,7 @@
         "NO.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "NO courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1075,13 +1235,17 @@
         "NO.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "NO service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1089,13 +1253,17 @@
         "NO.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "NO size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1103,7 +1271,7 @@
         "HR.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "HR courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1121,13 +1289,17 @@
         "HR.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "HR service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1135,13 +1307,17 @@
         "HR.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "HR size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1149,7 +1325,7 @@
         "BA.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BA courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1167,13 +1343,17 @@
         "BA.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BA service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1181,13 +1361,17 @@
         "BA.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BA size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1195,7 +1379,7 @@
         "BG.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BG courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1213,13 +1397,17 @@
         "BG.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BG service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1227,13 +1415,17 @@
         "BG.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "BG size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1241,7 +1433,7 @@
         "GR.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "GR courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1259,13 +1451,17 @@
         "GR.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "GR service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1273,13 +1469,17 @@
         "GR.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "GR size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1287,7 +1487,7 @@
         "IS.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IS courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1305,13 +1505,17 @@
         "IS.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IS service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1319,13 +1523,17 @@
         "IS.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "IS size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1333,7 +1541,7 @@
         "RO.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "RO courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1351,13 +1559,17 @@
         "RO.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "RO service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1365,13 +1577,17 @@
         "RO.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "RO size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
@@ -1379,7 +1595,7 @@
         "AT.courier": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "AT courier",
           "options": {
             "defaultValue": "DE-DHL",
             "selectBoxValues": [
@@ -1397,13 +1613,17 @@
         "AT.service": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "AT service",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "DST",
             "selectBoxValues": [
               {
+                "value": "DST",
+                "caption": "DHL Standard"
+              },
+              {
                 "value": "STT",
-                "caption": "STT"
+                "caption": "DPD Standard Tracked"
               }
             ]
           }
@@ -1411,13 +1631,17 @@
         "AT.size": {
           "type": "selectBox",
           "required": false,
-          "label": "DE",
+          "label": "AT size",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "NP",
             "selectBoxValues": [
               {
-                "value": "ST",
-                "caption": "ST"
+                "value": "NP",
+                "caption": "DHL Regular (A<60, B<60, C<120 cm)"
+              },
+              {
+                "value": "NP",
+                "caption": "DPD Regular (A+2B+2C<280cm, A<175cm)"
               }
             ]
           }
