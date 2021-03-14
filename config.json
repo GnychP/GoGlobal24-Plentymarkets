@@ -101,8 +101,12 @@
           "required": false,
           "label": "FR courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "FR-COLISSIMO",
             "selectBoxValues": [
+              {
+                "value": "FR-COLISSIMO",
+                "caption": "FR-COLISSIMO"
+              },
               {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
@@ -119,8 +123,16 @@
           "required": false,
           "label": "FR service",
           "options": {
-            "defaultValue": "DST",
+            "defaultValue": "STC",
             "selectBoxValues": [
+              {
+                "value": "STC",
+                "caption": "Colissimo Standard Tracked"
+              },
+              {
+                "value": "SPO",
+                "caption": "Colissimo Standard Proof of Delivery"
+              },
               {
                 "value": "DST",
                 "caption": "DHL Standard"
@@ -137,8 +149,16 @@
           "required": false,
           "label": "FR size",
           "options": {
-            "defaultValue": "NP",
+            "defaultValue": "CR",
             "selectBoxValues": [
+              {
+                "value": "CS",
+                "caption": "Colissimo Small (A+B+C<150 cm)"
+              },
+              {
+                "value": "CR",
+                "caption": "Colissimo Regular (150 cm< A+B+C <200 cm)"
+              },
               {
                 "value": "NP",
                 "caption": "DHL Regular (A<60, B<60, C<120 cm)"
