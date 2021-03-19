@@ -175,8 +175,12 @@
           "required": false,
           "label": "IT courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "GLS-IT",
             "selectBoxValues": [
+              {
+                "value": "GLS-IT",
+                "caption": "GLS-IT"
+              },
               {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
@@ -193,8 +197,12 @@
           "required": false,
           "label": "IT service",
           "options": {
-            "defaultValue": "DST",
+            "defaultValue": "GLI",
             "selectBoxValues": [
+              {
+                "value": "GLI",
+                "caption": "GLS Italy"
+              },
               {
                 "value": "DST",
                 "caption": "DHL Standard"
@@ -211,8 +219,12 @@
           "required": false,
           "label": "IT size",
           "options": {
-            "defaultValue": "NP",
+            "defaultValue": "ST",
             "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "GLS Standard (A+2B+2C<300cm,A<235cm)"
+              },
               {
                 "value": "NP",
                 "caption": "DHL Regular (A<60, B<60, C<120 cm)"
@@ -229,8 +241,12 @@
           "required": false,
           "label": "ES courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "ES-CORREOS",
             "selectBoxValues": [
+              {
+                "value": "ES-CORREOS",
+                "caption": "ES-CORREOS"
+              },
               {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
@@ -247,8 +263,16 @@
           "required": false,
           "label": "ES service",
           "options": {
-            "defaultValue": "DST",
+            "defaultValue": "CST",
             "selectBoxValues": [
+              {
+                "value": "CST",
+                "caption": "Correos Standard"
+              },
+              {
+                "value": "CPM",
+                "caption": "Correos Premium"
+              },
               {
                 "value": "DST",
                 "caption": "DHL Standard"
@@ -265,8 +289,12 @@
           "required": false,
           "label": "ES size",
           "options": {
-            "defaultValue": "NP",
+            "defaultValue": "ST",
             "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "Correos Standard (A+B+C=210 cm, A<120 cm)"
+              },
               {
                 "value": "NP",
                 "caption": "DHL Regular (A<60, B<60, C<120 cm)"
@@ -283,8 +311,12 @@
           "required": false,
           "label": "BE courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "POST-NL",
             "selectBoxValues": [
+              {
+                "value": "POST-NL",
+                "caption": "POST-NL"
+              },
               {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
@@ -301,8 +333,16 @@
           "required": false,
           "label": "BE service",
           "options": {
-            "defaultValue": "DST",
+            "defaultValue": "PPHD",
             "selectBoxValues": [
+              {
+                "value": "PPHD",
+                "caption": "Post NL Tracked"
+              },
+              {
+                "value": "PPHDS",
+                "caption": "Post NL Tracked Signature"
+              },
               {
                 "value": "DST",
                 "caption": "DHL Standard"
@@ -319,8 +359,12 @@
           "required": false,
           "label": "BE size",
           "options": {
-            "defaultValue": "NP",
+            "defaultValue": "ST",
             "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "Post Standard"
+              },
               {
                 "value": "NP",
                 "caption": "DHL Regular (A<60, B<60, C<120 cm)"
@@ -337,8 +381,12 @@
           "required": false,
           "label": "NL courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "POST-NL",
             "selectBoxValues": [
+              {
+                "value": "POST-NL",
+                "caption": "POST-NL"
+              },
               {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
@@ -355,8 +403,16 @@
           "required": false,
           "label": "NL service",
           "options": {
-            "defaultValue": "DST",
+            "defaultValue": "PPHD",
             "selectBoxValues": [
+              {
+                "value": "PPHD",
+                "caption": "Post NL Tracked"
+              },
+              {
+                "value": "PPHDS",
+                "caption": "Post NL Tracked Signature"
+              },
               {
                 "value": "DST",
                 "caption": "DHL Standard"
@@ -373,8 +429,12 @@
           "required": false,
           "label": "NL size",
           "options": {
-            "defaultValue": "NP",
+            "defaultValue": "ST",
             "selectBoxValues": [
+              {
+                "value": "ST",
+                "caption": "Post Standard"
+              },
               {
                 "value": "NP",
                 "caption": "DHL Regular (A<60, B<60, C<120 cm)"
@@ -1579,8 +1639,12 @@
           "required": false,
           "label": "AT courier",
           "options": {
-            "defaultValue": "DE-DHL",
+            "defaultValue": "POST-AT",
             "selectBoxValues": [
+              {
+                "value": "POST-AT",
+                "caption": "POST-AT"
+              },
               {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
@@ -1597,8 +1661,12 @@
           "required": false,
           "label": "AT service",
           "options": {
-            "defaultValue": "DST",
+            "defaultValue": "APS",
             "selectBoxValues": [
+              {
+                "value": "APS",
+                "caption": "Austrian Post Standard"
+              },
               {
                 "value": "DST",
                 "caption": "DHL Standard"
@@ -1615,8 +1683,12 @@
           "required": false,
           "label": "AT size",
           "options": {
-            "defaultValue": "NP",
+            "defaultValue": "AP",
             "selectBoxValues": [
+              {
+                "value": "AP",
+                "caption": "Austrian Post Standard (A+2B+2C<360 cm, A<200 cm)"
+              },
               {
                 "value": "NP",
                 "caption": "DHL Regular (A<60, B<60, C<120 cm)"
