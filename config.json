@@ -108,6 +108,10 @@
                 "caption": "FR-COLISSIMO"
               },
               {
+                "value": "FR-MONDIAL-RELAY",
+                "caption": "FR-MONDIAL-RELAY"
+              },
+              {
                 "value": "DE-DHL",
                 "caption": "DE-DHL"
               },
@@ -134,6 +138,14 @@
                 "caption": "Colissimo Standard Proof of Delivery"
               },
               {
+                "value": "24R",
+                "caption": "Mondial Relay Standard - Small"
+              },
+              {
+                "value": "24L",
+                "caption": "Mondial Relay Standard - Large"
+              },
+              {
                 "value": "DST",
                 "caption": "DHL Standard"
               },
@@ -158,6 +170,10 @@
               {
                 "value": "CR",
                 "caption": "Colissimo Regular (150 cm< A+B+C <200 cm)"
+              },
+              {
+                "value": "MP",
+                "caption": "Mondial Relay"
               },
               {
                 "value": "NP",
